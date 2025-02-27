@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniFast</title>
+
+    <style>
+        body {
+            font: normal 20pt Montserrat;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Seu nome: ')
+        document.write(`Seu nome é <strong>${nome}</strong> e tem ${nome.length} letras.<br/>`) // "document.write" serve para escrever no documento/site.
+        // <br> Serve para pular linhar | <strong> Serve para deixar as letras maiúsculas.
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}.<br/>`)
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}.`)
+    </script>
+</body>
+</html>
+
+<!--
+Funções:
+    var s = 'JavaScript'
+    s.length // O length mostra quantas letras tem a string.
+    s.toUpperCase() // Colocar letras em maiúsculas.
+    s.toLowerCase() // Colocar letras em minúsculas.
+-->
+
+<!--  
+Funções:
+    var n = 1300.5
+    n.toFixed(2) // O toFixed serve para determinar as casas decimais de um número flutuante. Nesse caso resultaria em 1300.50
+    n.toFixed(2).replace('.', ',') // Substituir o . em ,
+    n.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) // Transformar o valor em uma moeda do mundo.
+-->
