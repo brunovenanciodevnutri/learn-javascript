@@ -1,0 +1,51 @@
+<!-- 
+Racionais:
+5 > 2 = true
+7 < 4 = false
+8 >= 8 = true
+9 <= 7 = false
+5 == 5 = true
+4 != 4 = false
+
+5 == 5 = true
+5 == "5" = true -> Quando utilizados 2 sinais de igual, apenas indica se os valores descritos são iguais, independente do tipo.
+5 === "5" = true -> Quando utilizados 3 sinais de igual, indica se o valor é igual e do mesmo tipo ou não.
+
+
+Lógicos:
+! = negação -> Exemplo: Eu quero uma caneta que NÃO seja azul.
+    true / false
+Sinaliza apenas se sim ou não. Nesse caso uma caneta que não seja azul.
+
+&& conjunção -> Exemplo: Eu quero uma caneta azul E vermelha.
+    true true = true
+    true false = false
+    false false = false
+Pois sinaliza as se tem azul e se tem vermelha, as duas opções.
+
+|| disjunção -> Exemplo: Eu quero uma caneta azul OU vermelha.
+    true true = true
+    true false = true
+    false false = false
+Pois sinaliza as se tem azul ou se tem vermelha, mas se tiver apenas uma não haverá problemas.
+
+EXEMPLOS NA PRÁTICA:
+    var a = 5
+    var b = 8
+
+    a != b
+    true    = TRUE
+
+    a > b && b % 2 == 0
+    false    true         = FALSE
+
+    a > b || b % 2 == 0
+    false    true         = TRUE
+
+Ordem de Precedência: () -> ** -> */% -> +- -> Racionais -> ! -> && -> || -> Ternário
+
+
+Ternário -> São 3 blocos. Teste, Verdadeiro e Falso.
+Exemplo: média >= 7.0 ? "Aprovado" : "Reprovado"
+Se a média for maior ou igual a 7.0 o aluno será aprovado (?) e se for menor será reprovado (:).
+-->
