@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos</title>
+    <style>
+        body {
+            background: rgb(0, 0, 0);
+            color: white;
+            font: normal 28pt Poppins;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="nav-div">Iniciando os estudos <strong>DOM</strong>.</h1>
+    <p>Aqui abaixo estão os <strong>resultados:</strong></p>
+    <div id="msg">Clique aqui</div>
+    <script>
+//        window.document.write(window.navigator.appName) | Mostra o nome do navegador.
+//        window.document.write(window.document.URL) | Mostra o URL do documento.
+
+// Por TAG:
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] // Mandei selecionar a tag "p".
+//        window.document.write(`<br/>A primeira tag "p" está escrita assim: ${p1.innerText}`) | innerText ou innerHTML serve pra replicar o texto da tag que selecionei anteriormente.
+        p1.style.color = 'red'
+        corpo.style.background = 'rgb(29, 29, 29)'
+//        window.alert(p1.innerText)
+
+// Por ID:
+        var d1 = window.document.getElementById('msg')
+        d1.style.background = 'red'
+
+// Por Selector:
+        var d = window.document.querySelector('div#msg') // Para selecionar, nesse caso ele necessita da tag e o ID em específico.
+        d.style.background = 'blue'
+    </script>
+</body>
+</html>
