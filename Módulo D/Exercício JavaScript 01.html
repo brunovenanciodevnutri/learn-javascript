@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <style>
+        body {
+            font: normal 20pt Poppins;
+            color: white;
+            background-color: black;
+            text-align: center
+        }
+        div#titulo {
+            font: bold 24pt Poppins;
+        }
+        div#bloco {
+            color: black;
+            background-color: white;
+            width: 700px;
+            height: 500px;
+            border-radius: 2%;
+            box-shadow: 3px 3px 10px rgb(12, 12, 12);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img#imagem {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <div id="titulo">Hora do Dia</div>
+    <div id="bloco">
+        <p id="horaatual"></p>
+        <img id="imagem" src="">
+    </div>
+    <script>
+        var horaatual = window.document.getElementById('horaatual')
+        var data = new Date();
+        var horas = data.getHours()
+        var corpo = document.body
+        var imagem = window.document.getElementById('imagem')
+        
+        horaatual.innerHTML = `</br>Agora são ${horas} horas.`
+        if (horas > 6 && horas < 12) { // Manhã
+            corpo.style.background = '#ffc979'
+            imagem.src = 'https://classic.exame.com/wp-content/uploads/2017/06/thinkstockphotos-466262074.jpg?ims=750x/filters:quality(85):format(webp)'
+        } else if (horas >= 12 && horas < 18) { // Tarde
+            corpo.style.background = '#9b4d2f'
+            imagem.src = 'https://img.freepik.com/fotos-gratis/nuvens-vermelhas-do-por-do-sol-sobre-as-arvores_1204-352.jpg?t=st=1740946909~exp=1740950509~hmac=4299bb2dee9cc90e306af385ccc2c33dae79ee3db86ec58c21ad1a93f748db6c&w=1060'
+        } else if (horas >= 18 || horas > 0 && horas < 6) { // Noite
+            corpo.style.background = '#444444'
+            imagem.src = 'https://www.aluralingua.com.br/artigos/assets/night.jpg'
+        }
+    </script>
+</body>
+</html>

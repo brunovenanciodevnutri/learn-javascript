@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniFast</title>
+    <style>
+        body {
+            font: normal 20pt Poppins;
+            color: black;
+            background-color: rgb(255, 209, 241);
+        }
+        input {
+            font: normal 18pt Poppins;
+            color: white;
+            width: 150px;
+            background-color: rgb(71, 71, 71);
+        }
+        input#btn1 {
+            font: bold 14pt Poppins;
+            color: white;
+            background-color: #f10000;
+            width: 150px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Calculadora do Amor</h1>
+    <p>A calculadora mais verídica do Brasil.<p>
+    <input type="text" name="Nome" id="txt1"> +
+    <input type="text" name="Nome" id="txt2">
+    <input type="button" value="Calcular" id="btn1">
+    <div id="res" style="font: bold 20pt Poppins;">Resultado:</div>
+
+   <script>
+        var res = window.document.getElementById("res")
+        var btn = window.document.getElementById("btn1")
+
+        btn.addEventListener('click', clicar)
+        btn.addEventListener('mouseenter', entrar)
+        btn.addEventListener('mouseout', sair)
+
+        function clicar() {
+            res.innerText = 'Fofinho e Lindinha têm 100000000% de Amor Envolvido ❤️, abreviando seria o infinito.'
+            res.style.font = 'bold 20pt Poppins'
+            res.style.color = 'black'
+            res.style.backgroundColor = 'white'
+        }
+        function entrar() {
+            btn.style.backgroundColor = '#ffd1f1'
+            btn.style.color = 'red'
+        }
+        function sair() {
+            btn.style.backgroundColor = '#f10000'
+            btn.style.color = 'white'
+        }
+    </script>
+</body>
+</html>

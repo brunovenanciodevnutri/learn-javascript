@@ -1,0 +1,56 @@
+body {
+    font: normal 16pt Poppins;
+    background-color: rgb(24, 24, 24);
+}
+
+header {
+    font: normal 24pt Poppins;
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: rgb(255, 255, 255);
+    color: black;
+    width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);
+}
+
+footer {
+    font: italic 14pt Poppins;
+    color: white;
+    text-align: center;
+}
+
+input#ano {
+    font: normal 16pt Poppins;
+    height: 25px;
+    width: 100px;
+}
+
+input#btn {
+    width: 150px;
+    height: 40px;
+    font: bold 10pt Poppins;
+    color: white;
+    background: black;
+}
+
+img#imagem1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 200px;
+    box-shadow: 0px 0px 5px black;
+}
+
+div#sexo {
+    margin-top: 10px;
+}
+
+div#verificar {
+    margin-top: 15px;
+}
