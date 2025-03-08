@@ -1,0 +1,43 @@
+body {
+    background-color: dodgerblue;
+    text-align: center;
+}
+
+header {
+    font: bold 24pt Poppins;
+    color: white;
+    padding-top: 2%;
+}
+
+section {
+    font: normal 16pt Poppins;
+    color: black;
+    background-color: white;
+    padding: 1%;
+    width: 600px;
+    height: 400px;
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.445);
+    margin: auto;
+    margin-top: 1%;
+    text-align: left;
+}
+
+input#n {
+    font: normal 14pt Poppins;
+    margin-left: 2%;
+}
+
+input#btn {
+    font: bold 12pt Poppins;
+    color: white;
+    background-color: black;
+    transition: background 0.5s ease;
+}
+
+input#btn2 {
+    font: bold 10pt Poppins;
+    color: white;
+    background-color: black;
+    transition: background 0.5s ease;
+}

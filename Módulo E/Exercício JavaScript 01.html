@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    <link rel="stylesheet" href="./CSS/estilo01.css">
+</head>
+<body>
+    <header>Vamos contar</header></br>
+    <section>
+        <div>
+            <p>Início: <input type="number" name="inicio" id="btninicio"></p>
+            <p>Fim: <input type="number" name="fim" id="btnfim"></p>
+            <p>Pular: <input type="number" name="pular" id="btnpular"></p>
+        </div>
+        <div>
+            <input type="button" value="Contar" id="btn">
+        </div>
+        <div>
+            <p id="txt1">Preencha o formulário obter o resultado...</p>
+            <p id="txt2"></p>
+        </div>
+    </section>
+    <script>
+        // Selecionando elementos do site
+        var btn = window.document.getElementById('btn')
+        var txt1 = window.document.getElementById('txt1')
+        var txt2 = window.document.getElementById('txt2')
+        // Criando variáveis
+        // Criando eventos
+        btn.addEventListener('click', clicar)
+        btn.addEventListener('mouseenter', mouseenter)
+        btn.addEventListener('mouseout', mouseout)
+
+        // Funções
+        function clicar() {
+            var btninicio = window.document.getElementById('btninicio')
+            var btnfim = window.document.getElementById('btnfim')
+            var btnpular = window.document.getElementById('btnpular')
+            var vinicio = Number(btninicio.value)
+            var vfim = Number(btnfim.value)
+            var vpular = Number(btnpular.value)
+
+            if (vinicio === 0 || vfim === 0) {
+                txt1.innerHTML = 'Impossível contar! Preencha todas as informações.'
+            }
+
+            else if (vpular === 0) {
+                vpular = 1
+                txt1.innerHTML = 'Contando:</br>'
+                for (var c = vinicio ; c <= vfim ; c += vpular) {
+                    txt1.innerHTML += `${c} -> `
+                }
+                txt1.innerHTML += `Fim`
+            }
+
+            else {
+                txt1.innerHTML = 'Contando:</br>'
+                for (var c = vinicio ; c <= vfim ; c += vpular) {
+                    txt1.innerHTML += `${c} -> `
+                }
+                txt1.innerHTML += `Fim`
+            }
+
+        }
+        function mouseenter() {
+            btn.style.background = 'white'
+            btn.style.color = 'black'
+        }
+        function mouseout() {
+            btn.style.background = 'black'
+            btn.style.color = 'white'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+    background-color:dodgerblue
+}
+
+header {
+    font: bold 24pt Poppins;
+    color:white;
+    text-align: center;
+    padding-top: 2%;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+    margin: auto;
+    padding: 1%;
+}
+
+p {
+    font: normal 10pt Poppins;
+    color: black;
+}
+
+input#btn {
+    background-color: black;
+    font: bold 10pt Poppins;
+    margin-left: 2%;
+    color: white;
+    border: solid 2px black;
+}

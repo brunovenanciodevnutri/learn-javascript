@@ -1,0 +1,45 @@
+body {
+    background-color:dodgerblue
+}
+
+header {
+    font: bold 24pt Poppins;
+    color:white;
+    text-align: center;
+    padding-top: 2%;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+    margin: auto;
+    padding: 1%;
+}
+
+p {
+    font: normal 14pt Poppins;
+    color: black;
+}
+
+input#btn {
+    font: bold 12pt Poppins;
+    color: white;
+    background-color: black;
+    border: solid 2px black;
+}
+
+input#btninicio {
+    font: normal 12 Poppins;
+}
+
+input#btnfim {
+    font: normal 12 Poppins;
+    margin-left: 3%;
+}
+
+input#btnpular {
+    font: normal 12 Poppins;
+}

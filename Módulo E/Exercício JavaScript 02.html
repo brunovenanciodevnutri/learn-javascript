@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="./CSS/estilo02.css"
+</head>
+<body>
+    <header>Tabuada</header></br>
+    <section>
+        <div>
+            <p>Número: <input type="number" name="number" id="btnnumber"><input type="button" value="Gerar Tabuada" id="btn"></p>
+        </div>
+        <div>
+            <form>
+                <select id="txt1" name="plataforma" required="required" multiple size="10">
+                    <option value="n">Digite um número acima</option>
+                </select>
+            </form>
+        </div>
+    </section>
+    <script>
+        // Selecionando elementos do site
+        var btn = window.document.getElementById('btn')
+        var txt1 = window.document.getElementById('txt1')
+        // Criando variáveis
+        // Criando eventos
+        btn.addEventListener('click', clicar)
+        btn.addEventListener('mouseenter', mouseenter)
+        btn.addEventListener('mouseout', mouseout)
+
+        // Funções
+        function clicar() {
+            txt1.innerHTML = ''
+            var btnnumber = window.document.getElementById('btnnumber')
+            var vbtnnumber = Number(btnnumber.value)
+            
+            if (vbtnnumber === 0) {
+                txt1.innerHTML = '<option>Impossível calcular! Preencha as informações corretamente.</option>'
+            }
+
+            else {
+                for (c = 1 ; c <= 10 ; c += 1) {
+                    var multiplicar = vbtnnumber * c
+                    txt1.innerHTML += `<option>${vbtnnumber} x ${c} = ${multiplicar}</option>`
+                }
+            }   
+        }
+        function mouseenter() {
+            btn.style.background = 'white'
+            btn.style.color = 'black'
+        }
+        function mouseout() {
+            btn.style.background = 'black'
+            btn.style.color = 'white'
+        }
+    </script>
+</body>
+</html>
